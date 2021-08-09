@@ -1,0 +1,33 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?e7f3424a8fdabc8314af6b51e1ee7bdf") format("truetype"),
+url("./flaticon.woff?e7f3424a8fdabc8314af6b51e1ee7bdf") format("woff"),
+url("./flaticon.woff2?e7f3424a8fdabc8314af6b51e1ee7bdf") format("woff2"),
+url("./flaticon.eot?e7f3424a8fdabc8314af6b51e1ee7bdf#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e7f3424a8fdabc8314af6b51e1ee7bdf#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "home": "\f101",
+    "home-1": "\f102",
+);
+
+.flaticon-home:before {
+    content: map-get($flaticon-map, "home");
+}
+.flaticon-home-1:before {
+    content: map-get($flaticon-map, "home-1");
+}
